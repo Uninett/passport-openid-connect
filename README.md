@@ -56,3 +56,13 @@ app.get('/', (req, res) => {
 app.get('/login', passport.authenticate('passport-openid-connect', {"successReturnToOrRedirect": "/"}))
 app.get('/callback', passport.authenticate('passport-openid-connect', {"callback": true, "successReturnToOrRedirect": "/"}))
 ```
+
+## Dataporten
+
+`passport-openid-connect` is tested against <https://docs.dataporten.no>, the norwegian API Platform for higher education. The strategy should work for other OpenID Connect providers as well.
+
+Relies on this certified OpenID Connect client library:
+
+* <https://github.com/panva/node-openid-client>
+
+Configuration options are passed on to this library.
