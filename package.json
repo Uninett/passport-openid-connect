@@ -1,6 +1,6 @@
 {
   "name": "passport-openid-connect",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "OpenID Connect PassportJS Strategy",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "keywords": [
     "openid",
@@ -21,7 +21,7 @@
   "author": "Andreas Åkre Solberg <andreas.solberg@uninett.no>",
   "license": "ISC",
   "dependencies": {
-    "openid-client": "^1.4.0",
-    "passport": "^0.3.2"
+    "openid-client": "^2.4.5",
+    "passport": "^0.4.0"
   }
 }
